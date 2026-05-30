@@ -1,13 +1,13 @@
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { ArrowRight, PlayCircle } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
-const fade = {
+const fade: Variants = {
   hidden: { y: 24, opacity: 0 },
   show: (i: number = 0) => ({
     y: 0,
     opacity: 1,
-    transition: { duration: 0.9, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] },
+    transition: { duration: 0.9, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] as const },
   }),
 };
 
