@@ -28,16 +28,6 @@ export function Hero() {
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 size-[800px] rounded-full bg-violet/20 blur-[160px] -z-10 pointer-events-none animate-drift" />
 
       <div className="max-w-7xl mx-auto px-6 relative">
-        <motion.div
-          variants={fade}
-          initial="hidden"
-          animate="show"
-          custom={0}
-          className="mb-8 inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-card/40 text-[11px] uppercase tracking-[0.18em] text-muted-foreground"
-        >
-          <span className="size-1.5 rounded-full bg-violet-glow shadow-glow animate-pulse" />
-          AI website engine — now in v2
-        </motion.div>
 
         <motion.h1
           variants={fade}
