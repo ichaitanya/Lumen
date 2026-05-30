@@ -1,29 +1,54 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Nav } from "@/components/site/Nav";
+import { Hero } from "@/components/site/Hero";
+import { Problem } from "@/components/site/Problem";
+import { Features } from "@/components/site/Features";
+import { Process } from "@/components/site/Process";
+import { Showcase } from "@/components/site/Showcase";
+import { Benefits } from "@/components/site/Benefits";
+import { Testimonials } from "@/components/site/Testimonials";
+import { Pricing } from "@/components/site/Pricing";
+import { Faq } from "@/components/site/Faq";
+import { FinalCta } from "@/components/site/FinalCta";
+import { Footer } from "@/components/site/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Lumen — Launch your website in days, not months" },
+      {
+        name: "description",
+        content:
+          "Lumen is the AI-powered platform that helps founders, agencies, and creators launch editorial-grade websites in days. Start building free.",
+      },
+      { property: "og:title", content: "Lumen — Launch your website in days, not months" },
+      {
+        property: "og:description",
+        content: "AI-powered website creation, rapid deployment, and editorial design — without the agency timeline.",
+      },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "/" },
     ],
+    links: [{ rel: "canonical", href: "/" }],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main className="bg-background text-foreground overflow-x-clip">
+      <Nav />
+      <Hero />
+      <Problem />
+      <Features />
+      <Process />
+      <Showcase />
+      <Benefits />
+      <Testimonials />
+      <Pricing />
+      <Faq />
+      <FinalCta />
+      <Footer />
+    </main>
   );
 }
