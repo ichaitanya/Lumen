@@ -35,7 +35,7 @@ export function Faq() {
                   <span className="font-display text-2xl md:text-3xl tracking-tight">{f.q}</span>
                   <motion.span
                     animate={{ rotate: isOpen ? 45 : 0 }}
-                    transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                    transition={{ duration: 0.4, ease: "easeOut" }}
                     className="size-10 rounded-full border border-border grid place-items-center shrink-0 group-hover:border-violet/40 transition-colors"
                   >
                     <Plus className="size-4" />
@@ -47,7 +47,7 @@ export function Faq() {
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                      transition={{ duration: 0.4, ease: "easeOut" }}
                       className="overflow-hidden border-b border-border"
                     >
                       <p className="pb-8 pr-16 text-muted-foreground leading-relaxed max-w-[60ch]">{f.a}</p>

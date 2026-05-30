@@ -37,7 +37,7 @@ export function Testimonials() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
                 className="font-display text-4xl md:text-6xl leading-[1.05] tracking-tight max-w-[24ch]"
               >
                 <span className="text-violet-glow">&ldquo;</span>

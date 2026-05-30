@@ -13,7 +13,7 @@ export function Nav() {
     <motion.nav
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
       className="fixed top-0 inset-x-0 z-50 border-b border-border backdrop-blur-xl bg-background/60"
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
