@@ -7,7 +7,7 @@ const fade: Variants = {
   show: (i: number = 0) => ({
     y: 0,
     opacity: 1,
-    transition: { duration: 0.9, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] as const },
+    transition: { duration: 0.9, delay: i * 0.08, ease: "easeOut" },
   }),
 };
 
