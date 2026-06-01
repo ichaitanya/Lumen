@@ -1,0 +1,11 @@
+# Cloudflare Pages Configuration
+# This file is used by the Cloudflare Pages build system
+
+version = 1
+
+[env]
+  [env.production]
+    vars = { ENVIRONMENT = "production" }
+  
+  [env.preview]
+    vars = { ENVIRONMENT = "preview" }
