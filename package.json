@@ -9,7 +9,7 @@
     "build:dev": "vite build --mode development",
     "build:cf": "vite build && wrangler publish",
     "preview": "vite preview",
-    "deploy": "echo 'Deployment complete'",
+    "deploy": "node scripts/deploy.js",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
