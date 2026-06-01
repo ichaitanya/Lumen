@@ -1,10 +1,15 @@
 # Cloudflare Pages Configuration
-# No deploy command needed - Pages handles deployment automatically
+# Main Pages config file
 
+# Pages build output directory
+pages_build_output_dir = "dist/client"
+
+# Environment variables
 [env.production]
   name = "lumen-prod"
 
 [env.preview]
   name = "lumen-preview"
+
 
 
