@@ -1,11 +1,28 @@
 # Cloudflare Pages Configuration
-# This file is used by the Cloudflare Pages build system
+# This file configures the build and deployment for Cloudflare Pages
 
-version = 1
+[env.production]
+  name = "lumen-prod"
+  routes = [{ pattern = "lumen.pages.dev/*", zone_id = "" }]
 
-[env]
-  [env.production]
-    vars = { ENVIRONMENT = "production" }
-  
-  [env.preview]
-    vars = { ENVIRONMENT = "preview" }
+[env.preview]
+  name = "lumen-preview"
+
+# Build configuration
+[build]
+  command = "npm run build"
+  cwd = "."
+  watch_paths = ["src/**/*.ts", "src/**/*.tsx"]
+
+# Output directory for Pages
+[build.upload]
+  format = "directory"
+
+# Assets configuration - Points to the static files directory
+[assets]
+  directory = "dist/client"
+
+# Pages configuration
+[pages_build_caching]
+  on_platform = true
+
