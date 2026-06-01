@@ -1,7 +1,0 @@
-# Cloudflare Workers Local Environment Variables
-# Copy this to .dev.vars for local development
-# The .dev.vars file is ignored by git and only used locally
-
-# Example environment variables
-# EXAMPLE_API_KEY=your_key_here
-# EXAMPLE_API_URL=https://api.example.com

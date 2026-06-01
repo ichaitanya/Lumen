@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(echo \"exit: $?\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/TanStack/router/main/docs/start/framework/react/hosting.md\")",
+      "Bash(curl -s https://raw.githubusercontent.com/TanStack/router/main/__TRACKED_VAR__)",
+      "Bash(rmdir scripts *)",
+      "Bash(echo \"rmdir: $?\")",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(npx tsc *)",
+      "Bash(echo \"=== tsc exit: $? ===\")",
+      "Bash(timeout 25 npx vite dev --port 5180)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:5180/)",
+      "Bash(rm -f dev.log)",
+      "Bash(git checkout *)"
+    ]
+  }
+}
