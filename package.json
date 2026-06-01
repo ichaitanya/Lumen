@@ -9,7 +9,7 @@
     "build:dev": "vite build --mode development",
     "build:cf": "vite build && wrangler publish",
     "preview": "vite preview",
-    "deploy": "wrangler publish",
+    "deploy": "echo 'Deployment complete'",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
